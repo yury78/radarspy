@@ -6,7 +6,7 @@ Ultimately powerful web service
 -------------------------------
 
 ### Welcome to repository
-Feel free to access (this website)[http://google.com]
+Feel free to access [this website](http://google.com)
 Test *test*
 
 ### Perfectly good software
