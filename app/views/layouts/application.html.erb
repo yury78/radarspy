@@ -7,13 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= link_to "About",  welcome_about_path %>
-  <%= link_to "Contacts",  welcome_contacts_path %>
-  <%= link_to "Features",  welcome_features_path %>
-  <%= link_to "FAQs",  welcome_faqs_path %>
-  <%= link_to "Pricing",  purchase_path %>
-  
+  <div class="container">
+    <ul class="nav nav-tabs">
+        <li><%= link_to "About",  welcome_about_path %></li>
+        <li><%= link_to "Contacts",  welcome_contacts_path %></li>
+        <li><%= link_to "Features",  welcome_features_path %></li>
+        <li><%= link_to "FAQs",  welcome_faqs_path %></li>
+        <li><%= link_to "Pricing",  purchase_path %></li>
+        <li><%= link_to "Invoices",  invoices_path %></li>
+    </ul>
 <%= yield %>
-
 </body>
 </html>

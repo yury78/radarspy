@@ -3,12 +3,9 @@ class InvoicesController < ApplicationController
 
   # GET /invoices
   # GET /invoices.json
-  def index
-    if params[:companyname]
-      @invoices = Invoice.where(company: params[:companyname])
-    else
-      @invoices = Invoice.all
-    end
+  def index    
+    @search=InvoiceSearch.new(params[:search])
+    @invoices =@search.scope    
   end
 
   # GET /invoices/1
