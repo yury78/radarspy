@@ -10,7 +10,13 @@ Rails.application.routes.draw do
   get 'welcome/faqs'
 
   get 'welcome/pricing'
+  
+  get 'buy' => 'welcome#pricing', as: 'purchase'
 
+  get '/order' => redirect('/buy')
+  
+  get 'search/:companyname' => 'invoices#index'
+  
   resources :invoices
   root to: 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
