@@ -36,6 +36,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.1'
+
+gem 'momentjs-rails', '>= 2.8.1'
+# gem 'bootstrap3-datetimepicker-rails', '~> 3.1.3'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
+gem 'videojs_rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
