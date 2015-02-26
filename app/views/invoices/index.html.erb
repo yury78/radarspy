@@ -3,7 +3,7 @@
   <%= form_tag invoices_path,method: :get do %>
   <%= text_field_tag 'search[date_from]', @search.date_from, :as => :date_picker %>
   <%= text_field_tag 'search[date_to]', @search.date_to %>
-  <%= submit_tag 'Search', class:'btn search-button' %>
+  <%= submit_tag 'Search', class:'btn search-button', id: 'searchbutton' %>
   <% end %>
 <div class="media">
   <div class="media-body">
@@ -36,5 +36,71 @@
 </div>
  
 <br>
-<%= videojs_rails sources: { mp4: "http://techslides.com/demos/sample-videos/small.mp4", webm: "http://techslides.com/demos/sample-videos/small.webm"}, setup: "{}", controls: false, width:"400" %>
+<%= videojs_rails sources: { mp4: "http://188.166.5.177/cherepovets-murmansk2.mp4" }, width:"800", height:"600", setup: {}, controls: false, id:"example_video_xyz" %>
+  
+<select name="in1">
+  <option>121e1</option>
+  <option>yavvhoo</option>
+  <option>gmffail</option>
+  <option>msn</option>
+  <option>121e1</option>
+  <option>yavzhoo</option>
+  <option>gmvail</option>
+  <option>msz1n</option>
+  <option>fv4h21e1</option>
+  <option>yayiykhoo</option>
+  <option>gmangn55il</option>
+  <option>msgdbdn</option>
+</select>
+  
+<select name="in1">
+  <option>121e1</option>
+  <option>yavvhoo</option>
+  <option>gmffail</option>
+  <option>msn</option>
+  <option>121e1</option>
+  <option>yavzhoo</option>
+  <option>gmvail</option>
+  <option>msz1n</option>
+  <option>fv4h21e1</option>
+  <option>yayiykhoo</option>
+  <option>gmangn55il</option>
+  <option>msgdbdn</option>
+</select>
+  
+<select name="in1">
+  <option>121e1</option>
+  <option>yavvhoo</option>
+  <option>gmffail</option>
+  <option>msn</option>
+  <option>121e1</option>
+  <option>yavzhoo</option>
+  <option>gmvail</option>
+  <option>msz1n</option>
+  <option>fv4h21e1</option>
+  <option>yayiykhoo</option>
+  <option>gmangn55il</option>
+  <option>msgdbdn</option>
+</select>
+  
+<select name="in1">
+  <option>121e1</option>
+  <option>yavvhoo</option>
+  <option>gmffail</option>
+  <option>msn</option>
+  <option>121e1</option>
+  <option>yavzhoo</option>
+  <option>gmvail</option>
+  <option>msz1n</option>
+  <option>fv4h21e1</option>
+  <option>yayiykhoo</option>
+  <option>gmangn55il</option>
+  <option>msgdbdn</option>
+</select>
+    
+  
+  
+  
 <%= link_to 'New Invoice', new_invoice_path %>
+    
+<%= javascript_include_tag "specific/invoices.js" %>
